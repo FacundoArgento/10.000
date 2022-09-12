@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+}
+
+.wrapper{
+    background-color: burlywood;
+    width: 90%;
+    margin: 50px auto;
+    max-width: 1000px;
+   
+}
+
+.header{
+    margin-top: 5px;
+}
+#participante{
+    text-align: left;
+    font-size: 20px;
+    outline: none;
+    padding: 6px;
+}
+
+.participantes{
+    text-align: left;
+}
+
+.btn{
+    background-color: bisque;
+    border:none;
+    outline: none;
+    color: white;
+    background-color: #213852;
+    width: 150px;
+    padding: 10px;
+
+}
+
+.btn:active{
+    background:white;
+    color: black;
+}
+
+#footer{
+    color: white;
+    text-align: left;
+    
+}

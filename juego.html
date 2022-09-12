@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.000</title>
+    <link rel="stylesheet" href="juego.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="title">
+            <h2>¡¡¡ 10.000 !!!</h2>
+        </header>
+
+        <article class = "tablero">
+            <input type="checkbox" class="checkbox" id="dado-1"> </input>
+            <label for="dado-1">
+                <img src="imagenes/dado1.png" />
+            </label>
+            <input type="checkbox" class="checkbox" id="dado-2"> </input>
+                <label for="dado-2">
+                    <img src="imagenes/dado2.png" />
+                </label>
+            <input type="checkbox" class="checkbox" id="dado-3"> </input>
+                <label for="dado-3">
+                    <img src="imagenes/dado3.png" />
+                </label>
+            <input type="checkbox" class="checkbox" id="dado-4"> </input>
+                <label for="dado-4">
+                    <img src="imagenes/dado4.png" />
+                </label>
+            <input type="checkbox" class="checkbox" id="dado-5"> </input>
+                <label for="dado-5">
+                    <img src="imagenes/dado5.png" />
+                </label>
+            <input type="checkbox" class="checkbox" id="dado-6"> </input>
+                <label for="dado-6">
+                    <img src="imagenes/dado6.png"/>
+                </label>
+        </article>
+
+        <aside class="puntuaciones">
+            <h3 style="text-align: center; padding-bottom: 10px; ">Puntuaciones</h3>
+            <table id="tabla-puntuaciones">
+
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puntuacion</th>
+                </tr>
+                
+            </table>
+            
+        </aside>
+
+        <article class="botonera">
+            
+            <button class ="btn-tablero" id="tiradaInicial">
+                Tirada Inicial
+            </button>
+
+            <button class="btn-tablero" id="tirarNuevamente">
+                Tirar Nuevamente
+            </button>
+
+            <button class="btn-tablero" id="plantarse">
+                Plantarse
+            </button>
+
+            <button class="btn-tablero" id="obtenerPuntuacion">
+                Obtener Puntuacion
+            </button>
+
+            <button class="btn-ayuda" id="ayuda">
+                ¿Como Jugar?
+            </button>
+
+        </article>
+        <footer class="footer">
+            <h4>FOOTER</h4>
+        </footer>
+    </div>
+
+    <script type="module" src="Juego.js"></script>
+    </body>
+</html>

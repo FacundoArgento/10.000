@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    /* Display: Grid*/
+    width: 90%;
+    max-width: 1800px;
+    min-width: 1000px;
+    /* margin de 10px arriba y abajo, y a los costados
+    automatico (lo centra)
+    */
+    margin: 10px auto;
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,auto);
+    gap: 10px;
+}
+
+.wrapper .title,
+.wrapper .tablero,
+.wrapper .botonera,
+.wrapper .footer{
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.wrapper .title{
+    background-color: #12203E;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: -1;
+
+}
+
+.tablero{
+    grid-column: span 3;
+    height: 750px;
+    min-height: 300px;
+    max-height: 750px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.checkbox{
+}
+
+.puntuaciones{
+    background-color: antiquewhite;
+    padding: 15px;
+    border-radius: 4px;
+    grid-column: 4/5;
+    grid-row: span 2;
+}
+
+.tabla-puntuaciones, tr, td, th{
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px;
+    border-collapse: collapse;
+}
+
+th{
+    text-align: left;
+}
+
+.botonera{
+    grid-column: span 3;
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
